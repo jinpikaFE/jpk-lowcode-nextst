@@ -5,7 +5,7 @@ const Sidebar: FC = () => {
   return (
     <div>
       <div style={{ marginBottom: 15 }}>
-        <Link href="/views/home" as="/">
+        <Link href="/views/home">
           <a
             style={{
               fontSize: 22,
@@ -19,18 +19,28 @@ const Sidebar: FC = () => {
       </div>
       <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
         <li>
-          <Link href="/views/home" as="/">
+          <Link href="/views/home">
             <a>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="/views/about" as="/about">
+          <Link href="/views/about">
             <a>About</a>
           </Link>
         </li>
         <li>
-          <Link href="/views/blog" as="/blog" prefetch={false}>
+          <Link href="/views/blog" prefetch={false}>
             <a>Blog</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/views/test" prefetch={false}>
+            <a>Test</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/views/utils/request" prefetch={false}>
+            <a>hh</a>
           </Link>
         </li>
       </ul>

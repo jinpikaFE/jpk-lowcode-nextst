@@ -14,18 +14,24 @@
   "dependencies": {
     "@nestjs/common": "^7.6.5",
     "@nestjs/core": "^7.6.5",
+    "@nestjs/mapped-types": "^1.0.1",
     "@nestjs/platform-express": "^7.6.5",
+    "@nestjs/testing": "^8.4.3",
+    "antd": "^4.19.3",
     "cross-env": "^6.0.3",
+    "jest": "^27.5.1",
     "nest-next": "^9.3.0",
     "next": "10",
     "react": "17",
     "react-dom": "17",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.5.2"
+    "rxjs": "^6.5.2",
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@types/jest": "^27.4.1",
     "@types/node": "^12.7.1",
     "@types/react": "^16.9.1",
     "@typescript-eslint/eslint-plugin": "^4.11.1",
