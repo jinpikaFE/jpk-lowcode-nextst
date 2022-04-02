@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { AxiosResponse } from 'axios';
 import { notification } from 'antd';
-import { ResultType } from 'pages/types/global';
+import { ResultType } from 'types/global';
 
 const codeMessage: Record<number, string> = {
   200: '服务器成功返回请求的数据。',
