@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { NextPage } from 'next';
 import request from 'pages/utils/request';
+import styles from './index.module.scss'
+
 
 const Page: NextPage = () => {
   const test = async () => {
@@ -13,7 +15,7 @@ const Page: NextPage = () => {
   useEffect(() => {
     test()
   }, [])
-  return <div>Test!</div>;
+  return <div className={styles.test}>Test! <div className={styles.s}>ssss</div></div>;
 };
 
 export default Page;

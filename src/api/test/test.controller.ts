@@ -8,7 +8,6 @@ export class TestController {
   constructor(private readonly testService: TestService) {}
 
   @Post()
-  @HttpCode(403)
   create(@Body() createTestDto: CreateTestDto) {
     return this.testService.create(createTestDto);
   }
