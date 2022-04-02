@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import type { AppProps /*, AppContext */ } from 'next/app';
+import 'antd/dist/antd.css';
 import Sidebar from '../components/sidebar';
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
