@@ -1,6 +1,6 @@
 import axios from 'axios';
 import type { AxiosResponse } from 'axios';
-import { ResultType } from 'pages/types/global';
+import { ResultType } from 'types/global';
 
 const axiosInstance = axios.create();
 axiosInstance.defaults.headers['Content-Type'] =
