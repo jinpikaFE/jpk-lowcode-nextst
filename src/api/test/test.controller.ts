@@ -6,6 +6,7 @@ import { Test } from './entities/test.entity';
 import { AllExceptionsFilter } from '../../filter/all-exceptions.filter';
 import { TransformInterceptor } from '../../interceptor/transform.interceptor';
 import { MyValidationPipe } from '../../pipe/validation.pipe';
+import { RbacInterceptor } from '../../interceptor/rbac.interceptor';
 
 @Controller('/api/test')
 @UseFilters(new AllExceptionsFilter())
@@ -13,6 +14,7 @@ import { MyValidationPipe } from '../../pipe/validation.pipe';
 export class TestController {
   constructor(private readonly testService: TestService) {}
 
+  @UseInterceptors(new RbacInterceptor(['admin']))
   @UsePipes(new MyValidationPipe())
   @Post()
   create(@Body() createTestDto: Test) {
