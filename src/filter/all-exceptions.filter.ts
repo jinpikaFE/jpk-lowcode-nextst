@@ -10,9 +10,7 @@ import { Logger } from '../utils/log4js';
 
 @Catch() // 捕获所有异常
 export class AllExceptionsFilter implements ExceptionFilter<Error> {
-  catch(exception: Error, host: ArgumentsHost) {
-    console.log(exception);
-    
+  catch(exception: Error, host: ArgumentsHost) { 
     const ctx = host.switchToHttp();
     const response = ctx.getResponse<Response>();
     const request = ctx.getRequest<Request>();

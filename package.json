@@ -19,8 +19,12 @@
     "@nestjs/testing": "^8.4.3",
     "@nestjs/typeorm": "^8.0.3",
     "antd": "^4.19.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
     "cross-env": "^6.0.3",
     "jest": "^27.5.1",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
     "mysql2": "^2.3.3",
     "nest-next": "^9.3.0",
     "next": "10",
@@ -29,11 +33,9 @@
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7",
     "sass": "^1.49.11",
+    "stacktrace-js": "^2.0.2",
     "typeorm": "^0.3.6",
-    "umi-request": "^1.4.0",
-    "moment": "^2.29.1",
-    "log4js": "^6.3.0",
-    "stacktrace-js": "^2.0.2"
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
